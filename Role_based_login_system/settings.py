@@ -24,7 +24,7 @@ SECRET_KEY = 'b_z73j80aa!3h9s+%ui*ii*bl%(cdw*w-tpukpqngcr7+!_dtw'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.vercel.app']
 
 # Application definition
 
@@ -73,12 +73,12 @@ WSGI_APPLICATION = 'Role_based_login_system.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
 
 # First, make sure you have installed the necessary MySQL adapter for Django.
 # You can install it using pip:
@@ -86,16 +86,16 @@ WSGI_APPLICATION = 'Role_based_login_system.wsgi.application'
 
 # Then, in your settings.py file:
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'agt',  # Change this to your database name
-        'USER': 'root',  # Change this to your MySQL username
-        'PASSWORD': 'Aniket@9277',  # Change this to your MySQL password
-        'HOST': 'localhost',  # Change this if your MySQL server is running on a different host
-        'PORT': '3306',  # Change this if your MySQL server is running on a different port
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'agt',  # Change this to your database name
+#         'USER': 'root',  # Change this to your MySQL username
+#         'PASSWORD': 'Aniket@9277',  # Change this to your MySQL password
+#         'HOST': 'localhost',  # Change this if your MySQL server is running on a different host
+#         'PORT': '3306',  # Change this if your MySQL server is running on a different port
+#     }
+# }
 
 
 # Password validation
