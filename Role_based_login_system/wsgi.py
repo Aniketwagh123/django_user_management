@@ -15,4 +15,4 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'Role_based_login_system.setting
 
 application = get_wsgi_application()
 
-app = application
+# app = application
